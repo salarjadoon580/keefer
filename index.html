@@ -24,7 +24,7 @@
             </div>
         </div>
         <nav class="menubar">
-            <ul>
+            <ul class="menu">
                 <li class="home"><a href="#">HOME</a></li>
                 <li><a href="#">BIOGRAPHY</a></li>
                 <li><a href="#">BLOG</a></li>
@@ -32,6 +32,7 @@
                 <li><a href="#">LIBRARY</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
+             <div class="toggle"><img src="Images/responsive_menu_icon.png" alt=""></div>
         </nav>
         <div class="main2">
             <div class="main2-1"><img src="Images/gurantee_banner.gif" alt="gurantee"></div>
@@ -217,6 +218,14 @@
                    </div>
             </div>
         </div>
+       <script>
+    const toggle = document.querySelector(".toggle");
+    const menu = document.querySelector(".menu");
+
+    toggle.addEventListener("click", () => {
+        menu.classList.toggle("show");
+    });
+</script>
     </body>
 </section>
 

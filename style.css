@@ -99,7 +99,17 @@ li {
     list-style: none;
     display: flex;
 }
-
+li:hover{
+    background-color: grey;
+}
+.toggle{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.toggle img{
+    height: 40px;
+}
 .home {
     background-color: grey;
     padding-right: 10px;

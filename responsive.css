@@ -1245,6 +1245,9 @@ height: 2px;
     .main4-3-1media{
         width: 100%;
     }
+    .toggle{
+        display: none;
+    }
 }
 @media(max-width:1360px){
     .contain4h h2{
@@ -1294,13 +1297,12 @@ height: 2px;
 @media(max-width:997px){
     .main4{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
         justify-items: center;
-        align-items: center;
     }
     .main4-1{
-        width: 80%;
+        width: 49%;
         justify-items: center;
     }
     .main4-1h h2{
@@ -1314,8 +1316,11 @@ height: 2px;
         margin-top: 40px;
         margin-bottom: 40px;
     }
+    .contain4{
+        margin-left: 0px;
+    }
     .contain4 {
-        width: 80%;
+        width: 90%;
         justify-items: center;
     }
     .contain4shadow{
@@ -1331,9 +1336,11 @@ height: 2px;
         margin-top: 0px;
     }
     .main4-2{
-        width: 80%;
-        text-align: center;
+        width: 49%;
         padding-bottom: 80px;
+    }
+    .main4-2p p{
+        line-height: 25px;
     }
     .main4-3{
         width: 80%;
@@ -1382,12 +1389,54 @@ height: 2px;
         width: 50%;
     }
 }
+@media(max-width:919px){
+    .hrshadow{
+        margin-top: -2px;
+    }
+    .main4-2{
+        text-align: center;
+    }
+    .main4-2h h1{
+font-size: 29px;
+    }
+    .main4-2p p{
+        margin-top: 20px;
+    }
+}
+@media(max-width:843px){
+    .main4{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .main4-3{
+        width: 95%;
+    }
+    .main4-2h h1{
+        font-size: 26px;
+    }
+    .main4-2p p{
+        font-size: 14px;
+    }
+}
 @media(max-width:766px){
     .main4-3-1 h2{
         font-size: 28px;
     }
     .main4-3-1 p{
         font-size: 19px;
+    }
+    .headercontact{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .hrshadow{
+        margin-top: -3px;
+    }
+    .main4-1h h2{
+        font-size: 28px;
+    }
+    .main4-1h2 h2{
+        font-size: 28px;
     }
 }
 @media(max-width:708px){
@@ -1400,8 +1449,49 @@ height: 2px;
     .main4-3{
         width: 100%;
     }
+    .hrshadow{
+        margin-top: 0px;
+    }
+    .main4-1h h2{
+        font-size: 31px;
+    }
+    .main4-1h2 h2{
+        font-size: 31px;
+    }
+    .main4-2p p{
+        font-size: 17px;
+    }
 }
 @media(max-width:599px){
+    .menubar ul{
+        display: none;
+         flex-direction: column;
+         background: #ae1e1eb2;
+        position:relative;
+        top: 60px;
+        right: 0;
+        width: 60%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+        justify-content: center;
+        height: 250px;
+        align-items: center;
+        
+    }
+    .menubar ul.show{
+        display: flex;
+    }
+    
+    .toggle{
+        display: flex;
+        justify-content: end;
+        cursor: pointer;
+    }
+    nav{
+        display: flex;
+        justify-content: end;
+    }
     .main4-2h h1{
         font-size: 26px;
     }
@@ -1440,7 +1530,7 @@ height: 2px;
     font-size: 12px;
 }
 .hrshadow{
-        margin-top: -5px;
+        margin-top: -3px;
     }
     .main4-2h h1{
         font-size: 21px;
@@ -1456,9 +1546,14 @@ height: 2px;
         width: 70%;
     }
 }
+@media(max-width:380px){
+    .hrshadow{
+        margin-top: -4px;
+    }
+}
 @media(max-width:365px){
     .hrshadow{
-        margin-top: -6px;
+        margin-top: -5px;
     }
     .main4{
         padding-left: 8px;
@@ -1474,6 +1569,6 @@ height: 2px;
 }
 @media(max-width:332px){
     .hrshadow{
-        margin-top: -7px;
+        margin-top: -5.5px;
     }
 }
